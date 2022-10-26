@@ -1,0 +1,16 @@
+GET http://apis.data.go.kr/B552584/ArpltnStatsSvc/getCtprvnMesureLIst
+    ?serviceKey={{serviceKey}}
+Accept: application/x-www-form-urlencoded
+
+
+> {%
+ client.test("CheckResult", function() {
+     if(response.status === 200 ) {
+         console.log('response status is 200')
+     } else {
+         client.assert(response.status !== 200, "Response status is not 200")
+     }
+ })
+
+
+ %}
