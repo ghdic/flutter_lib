@@ -1,5 +1,11 @@
 GET http://apis.data.go.kr/B552584/ArpltnStatsSvc/getCtprvnMesureLIst
     ?serviceKey={{serviceKey}}
+    &returnType=json
+    &numOfRows=30
+    &pageNo=1
+    &itemCode=PM10
+    &dataGubun=HOUR
+    &searchCondition=WEEK
 Accept: application/x-www-form-urlencoded
 
 
